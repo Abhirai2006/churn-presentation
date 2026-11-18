@@ -9,16 +9,17 @@ Project code: https://github.com/Abhirai2006/telco-churn-intelligence-system
 
 ## What is in this repository
 
-`index.html` is the whole presentation in one file. It works online and offline, and Cloudflare Pages serves it from the root.
+`index.html` is the whole presentation in one file. It works online and offline, and Cloudflare serves it from the root through `wrangler.jsonc`.
 
-## Deploy on Cloudflare Pages
+## Deploy on Cloudflare
+
+`wrangler.jsonc` tells Cloudflare to serve `index.html` as a static site, so no build step is needed.
 
 1. In GitHub Desktop: File, Add local repository, pick this folder, then Publish repository.
-2. In the Cloudflare dashboard: Workers & Pages, Create, Pages, Connect to Git. Choose this repository.
-3. Framework preset: None.
-4. Build command: `exit 0`
-5. Build output directory: `/`
-6. Save and Deploy. Cloudflare gives you a `*.pages.dev` address. Every push to GitHub redeploys on its own.
+2. In the Cloudflare dashboard: Workers & Pages, Create application, Import a repository. Choose this repository.
+3. Build command: leave empty.
+4. Deploy command: `npx wrangler deploy` (the default).
+5. Save and Deploy. Cloudflare gives you a `*.workers.dev` address. Every push to GitHub redeploys on its own.
 
 To change a slide, edit `index.html`, then commit and push.
 
