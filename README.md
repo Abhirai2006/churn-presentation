@@ -9,18 +9,18 @@ Project code: https://github.com/Abhirai2006/telco-churn-intelligence-system
 
 ## What is in this repository
 
-`index.html` is the whole presentation in one file. It works online and offline, and Vercel serves it from the root.
+`index.html` is the whole presentation in one file. It works online and offline, and Cloudflare Pages serves it from the root.
 
-## Deploy on Vercel
+## Deploy on Cloudflare Pages
 
 1. In GitHub Desktop: File, Add local repository, pick this folder, then Publish repository.
-2. On vercel.com: Add New, Project, import the repository.
-3. Framework preset: Other. Leave the build command and output directory empty.
-4. Deploy. Every push to GitHub deploys again on its own.
+2. In the Cloudflare dashboard: Workers & Pages, Create, Pages, Connect to Git. Choose this repository.
+3. Framework preset: None.
+4. Build command: `exit 0`
+5. Build output directory: `/`
+6. Save and Deploy. Cloudflare gives you a `*.pages.dev` address. Every push to GitHub redeploys on its own.
 
-Netlify works the same way: import the repository, no build command, publish directory `.` (the root).
-
-To change a slide, edit `index.html` directly, then commit and push.
+To change a slide, edit `index.html`, then commit and push.
 
 ## Presenting
 
