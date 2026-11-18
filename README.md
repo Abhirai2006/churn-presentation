@@ -36,10 +36,13 @@ Open the site in Chrome and press F for full screen.
 | N | Speaker notes on the same screen |
 | R | Replay the current slide's animation |
 | B | Blank screen |
+| M | Sound on or off (off at the start) |
 | ? | All keys |
 
 On the first slide you can grab the ID card with the mouse and throw it; it swings back on its strap.
+Slides 18 and 23 open with a question for the audience. The first click shows the slide, the next one moves on.
 The live cutoff demo is slide 18: drag the slider, then press "Back to 0.485".
+Moving forward into a new section plays a short full-screen wipe with the section name; going back or jumping by number skips it.
 
 ## Credits
 
