@@ -41,6 +41,7 @@ Open the site in Chrome and press F for full screen.
 
 On the first slide you can grab the ID card with the mouse and throw it; it swings back on its strap.
 Slides 18 and 23 open with a question for the audience. The first click shows the slide, the next one moves on.
+On the Thank you slide (27), the first click fades the details, enlarges "Thank you." and drops the ID card; the next click goes to the backup slides.
 The live cutoff demo is slide 18: drag the slider, then press "Back to 0.485".
 Moving forward into a new section plays a short full-screen wipe with the section name; going back or jumping by number skips it.
 
